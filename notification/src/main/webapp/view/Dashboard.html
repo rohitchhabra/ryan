@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<style>
+.city {
+   float: left;
+   margin: 10px;
+   padding: 10px;
+   max-width: 300px;
+   height: 300px;
+   border: 1px solid black;
+}
+
+form { width: 400px; }
+label { float: left; width: 150px; }
+input[type=text] { float: right; width: 180px;}
+.clear { clear: both; height: 0; line-height: 0; }
+.floatright { float: right; }
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-ptsans.js"></script>
+<script type="text/javascript" src="js/coin-slider.min.js"></script>
+</head>
+<body ng-controller="dsahboardController">
+
+<div class="header">
+<div class="header_resize">
+<div id="topdiv">
+<div class="logo">
+<h1><a href="javascript:void()"><span><B><font color="maroon">Ryan Consultants</font></B></span>
+ <small><font color="darkblue">World's Best Consulting Company</font></small></a></h1>
+</div>
+<div class="menu_nav">
+        <ul>
+          <li class="active1"><a href="index.html"><span>Login</span></a></li>
+          <li ng-click="studentList()"><a href="javascript:void()"><span>Students</span></a></li>
+          <li ng-click="registerStudent()"><a href="javascript:void()"><span>Register</span></a></li>
+          <li><a href="javascript:void()"><span>About Us</span></a></li>
+          <li><a href="javascript:void()"><span>Contact Us</span></a></li>
+        </ul>
+</div>
+</div>
+	<div align="center" class="login">
+	<Marquee behavior="scroll" scrollamount="3" direction="right"><font size=4 color="black">Welcome to World's best Consultancy.</font></marquee><hr>
+	<!-- <h3><font size=4 color="darkblue">World's Best Consulting Company</font></h3> -->
+	</div>
+
+          <div class="clr"></div><br><br>
+<div id="wide">
+<a href="javascript:void()"><button id="button1" ng-click="studentList()"><br><Font color="Blue" size=4><b>Students List</b></font></button></a>
+<a href="javascript:void()"><button id="button2" ng-click="registerStudent()"><Font color="Blue" size=4><b>Register New Student</font> </button></a>
+<!-- <br>
+<a href="studentregister.html"><button id="button3"><Font color="Blue" size=4><b>Edit User Profile</font> -->
+</div>
+
+<div id="foot3" align="center"><hr><font color="blue" size=2>Copyrights- 2016-2017</font></div>
+</body>
+</html>

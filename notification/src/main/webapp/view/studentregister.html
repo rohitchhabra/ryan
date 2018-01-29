@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<style>
+.city {
+   float: left;
+   margin: 10px;
+   padding: 10px;
+   max-width: 300px;
+   height: 300px;
+   border: 1px solid black;
+}
+
+form { width: 400px; }
+label { float: left; width: 150px; }
+input[type=text] { float: right; width: 180px;}
+.clear { clear: both; height: 0; line-height: 0; }
+.floatright { float: right; }
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-ptsans.js"></script>
+<script type="text/javascript" src="js/coin-slider.min.js"></script>
+</head>
+<body ng-controller="studentListController">
+
+<div class="header">
+<div class="header_resize">
+<div id="topdiv">
+<div class="logo">
+<h1><a href="index.html"><span><B><font color="maroon">Ryan Consultants</font></B></span> <small><font color="darkblue">World's Best Consulting Company</font></small></a></h1>
+</div>
+<div class="menu_nav">
+        <ul>
+          <li><a href="index.html"><span>Login</span></a></li>
+          <li ng-click="studentList()"><a href="javascript:void()"><span>Students</span></a></li>
+          <li class="active" ng-click="registerStudent()"><a href="javascript:void()"><span>Register</span></a></li>
+          <li><a href="javascript:void()"><span>About Us</span></a></li>
+          <li><a href="javascript:void()"><span>Contact Us</span></a></li>
+        </ul>
+</div>
+</div>
+	<div align="center" class="login">
+	<Marquee behavior="scroll" scrollamount="3" direction="right"><font size=4 color="black">Welcome to World's best Consultancy.</font></marquee><hr>
+	<font size=4 color="maroon"><u>Registration for new student:</u></font>
+	</div>
+
+          <div class="clr"></div>
+          <div id="parent">
+	<div id="wide">		
+<img src="images/sliderLogo.png" width="270" height="200" alt="" class="fl" />
+</div>
+<div id="narrow"> <br>
+<form><fieldset>
+<label for="Student Name">Student Name*: </label><input id="name" type="text" name="studentname" size="20" placeholder="First Name" required><br><br>
+<label for="Father's Name">Father's Name: </label><input id="father_name" type="text" name="father'sname" size="20" placeholder="Last Name" required><br><br>
+<label for="Passport Number">Passport Number:</label><input id="passport"  type="text" name="passportnumber" size="20" placeholder="Enter 8 digit alphanumberic" required><br><br>
+<label for="College Name">College Name:</label><input id="college"  type="text" name="College Name" size="20"><br><br>
+<label for="Course">Course:</label><input id="course"  type="text" name="Course" size="20"><br><br>
+<label for="Course StartDate">Course StartDate:</label><input  id="start_date"  type="text" name="Course StartDate" size="20"><br><br>
+<label for="Number of Semesters">Number of Semesters:</label><input  id="number_of_sem"  type="text" name="Number of Semesters" size="20"><br><br>
+<label for="Date of Birth">Date of Birth:</label><input  id="dob"  type="text" name="Date of Birth" size="20"><br><br>
+<label for="Address Line 1">Address Line 1:</label><input id="add1"  type="text" name="Addressline1" size="500"><br><br>
+<label for="Address Line 2">Address Line 2:</label><input id="add2"  type="text" name="Addressline2" size="500"><br><br>
+<label for="City">City:</label><input id="city"  type="text" name="Country" size="15"><br><br>
+<label for="Country">Country:</label><input id="country"  type="text" name="Country" size="15"><br><br>
+<label for="Pincode">Pincode:</label><input id="pincode"  type="text" name="Pincode" size="15"><br><br>
+<label for="Agent">Agent:</label><input id="agent"  type="text" name="Agent" size="15"><br><br>
+<input type="button" name="btnSubmit" value="Submit" ng-click="register()" id="btn_submit">
+<input type='reset' value='Reset' name='reset'>
+</form></fieldset>
+</div>
+</div>
+<div id="foot2" align="center"><hr><font color="blue" size=2>Copyrights- 2016-2017</font></div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<style>
+.city {
+   float: left;
+   margin: 10px;
+   padding: 10px;
+   max-width: 300px;
+   height: 300px;
+   border: 1px solid black;
+}   
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-ptsans.js"></script>
+<script type="text/javascript" src="js/coin-slider.min.js"></script>
+</head>
+<body ng-controller="loginController">
+
+<div class="header">
+<div class="header_resize">
+<div id="topdiv">
+<div class="logo">
+<h1><a href="index.html"><span><B><font color="maroon">Ryan Consultants</font></B></span> <small><font color="darkblue">World's Best Consulting Company</font></small></a></h1>
+</div>
+<div class="menu_nav">
+        <ul>
+          <li class="active"><a href="javascript:void()"><span>Login</span></a></li>
+        </ul>
+</div>
+</div>
+	<div align="center" class="login">
+	<Marquee behavior="scroll" scrollamount="3" direction="right"><font size=4 color="black">Welcome to World's best Consultancy.</font></marquee><hr>
+	<font size=4 color="maroon"><u>Login to Access your site:</u></font>
+	</div>
+
+          <div class="clr"></div>
+          <div id="parent">
+	<div id="wide">		
+<img src="images/sliderLogo.png" width="270" height="200" alt="" class="fl" />
+</div>
+<div id="narrow"> <br>
+<form>
+		<font size=4>UserName*: <input type="text" id="email" name="UserName" placeholder="Please Enter Username" required></font><br><br>
+		<font size=4>Password* : <input type="password" id="password" name="Password" placeholder="Please Enter Password" required>
+		<br>
+		<br>	
+		<input type="button" name="btnSubmit" value="Submit" ng-click="login()" id="button_i">
+<div id="forgot">
+
+<a href="javascript:void()" tabindex="5" class="forgot-password">
+<font size=2>Forgot Password?</font></a>
+							</div>
+</form>
+
+</div>
+
+
+</div>
+<div id="foot1" align="center"><hr><font color="blue" size=2>Copyrights- 2016-2017</font></div>
+</body>
+</html>
